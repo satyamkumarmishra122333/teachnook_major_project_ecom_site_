@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ihome-Jiapur</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <style>
+      .Customer {
+  background-image: url("background-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.counter {
+  background-image: url("background-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  color: #fff;
+}
+    </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#23">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#23">CONTACT US</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              TOP CITIES
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="delhi.html">DELHI</a></li>
+              <li><a class="dropdown-item" href="jaipur.html">JAIPUR</a></li>
+              <li><a class="dropdown-item" href="alert.html">MUMBAI</a></li>
+              <li><a class="dropdown-item" href="alert.html">CHENNAI</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="d-flex" role="search">
+
+          <button class="btn btn-outline-success" type="submit"><a href="login.php" style="text-decoration: none; color:#7fc142">Login/Register</a></button>
+</div>
+      </div>
+    </div>
+  </nav>
+  <div class="spot"></div>
+  <script>
+    // element references
+    const navbar = document.querySelector(".navbar navbar-expand-lg navbar-dark bg-dark");
+    const spot = document.querySelector(".spot");
+
+    // initialize and start the observer.
+    const observer = new IntersectionObserver(handleScroll, options);
+    observer.observe(spot);
+  </script>
+  <section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <!-- <img src="images/banner-1.png" alt=""> -->
+          <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Taj-Rambagh-PalaceExterior.jpg" alt="">
+          <div class="text">
+            <h1>Jaipur</h1>
+            <p>Taj-Rambagh-palace
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <!-- <img src="images/banner-2.png" alt=""> -->
+          <img
+            src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/16x7/Welcome-4-crop.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+            alt="">
+          <div class="text">
+            <h1>Jaipur</h1>
+            <p>Taj-Rambagh-palace
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.telegraph.co.uk/content/dam/Travel/hotels/asia/india/jaipur/rambagh-palace-jaipur-l.jpg"
+            alt="">
+          <div class="text">
+            <h1>Jaipur</h1>
+            <p>Taj-Rambagh-palace
+            </p>
+            <div class="flex">
+              <button class="primary-btn">READ MORE</button>
+              <button class="secondary-btn">CONTACT US</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+    integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Book </span> Your Rooms </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input placeholder="Check-In" type="text" onfocus="(this.type = 'date')" id="date">
+          <input placeholder="Check-Out" type="text" onfocus="(this.type = 'date')" id="date">
+          <input type="number" placeholder="Adults">
+          <input type="number" placeholder="Childern">
+          <a href="login.php"><input type="submit" value="CHECK AVAILABILITY"></a>
+        </form>
+      </div>
+    </div>
+  </section>
+  </div>
+  <section class="about top">
+    <div class="container flex">
+      <div class="left">
+        <div class="heading">
+          <h1>WELCOME</h1>
+          <h2>!Home</h2>
+        </div>
+        <h1>Rambagh Palace</h1>
+        <h3>Grand Palace Hotel in Jaipur near Hawa Mahal</h3>
+        <div class="loc">
+          <i class="fa-sharp fa-solid fa-location-dot"></i><a
+            href="https://www.google.com/maps/search/?api=1&query=Rambagh%20Palace,Jaipur@26.898068,75.808093">Bhawani
+            Singh Road, Jaipur, Rajasthan, Rajasthan - 302005, India</a></i>
+        </div>
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i><span>
+            <phone>+91 141-2385700 , +91 141- 6671234 For Room reservations +911416480442</phone>
+          </span>
+        </div>
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i><span>rambagh.jaipur@tajhotels.com,reservations.jaipur@ihcltata.com</p>
+        </div>
+        <div class="read-more-container">
+
+            <div class="container">
+              <p>
+                Originally built in 1835, Rambagh Palace, has stepped gracefully through many royal transitions—from the
+                home of the queen’s favourite handmaiden, to royal guesthouse and hunting lodge, and later as the
+                residence...
+                <span class="read-more-text">
+                  of the Maharaja Sawai Man Singh II and his queen, Maharani Gayatri Devi. Today, this jewel in the
+                  Taj’s crown offers 78 stunningly restored grand luxury rooms and suites in Jaipur which were the
+                  chambers of the former Maharaja. The palace retains its elaborate splendour, extravagantly decorated
+                  with hand-carved marble ‘jalis’ or latticework, sandstone balustrades, cupolas and ‘chattris’ or
+                  cenotaphs, and elaborate Mughal Gardens. Within this most glorious of palaces showcasing the best of
+                  Rajasthan’s royal heritage, you also experience the best fine-dining restaurants in Jaipur. Enjoy a
+                  royal Indian feast at Suvarna Mahal, the former palace ballroom built in the 18th-century French style
+                  with huge crystal chandeliers. For multi-cuisine options, head to Rajput Room, our all-day-dining
+                  restaurant, or Verandah Café. Find Mediterranean delights at the lounge bar, Steam, or unwind in the
+                  sophisticated charm of the Polo Bar, with the trophies and memorabilia of the Jaipur polo team on
+                  display. Take your royal retreat a notch further by indulging in signature treatments at the Jiva
+                  Grande Spa, where we envelop you in ancient Indian wellness therapies. Harmonise your mind and body
+                  with yoga and meditation. With the exquisite palace offering a scenic backdrop, our large selection of
+                  indoor and outdoor venues along with the Sawai Man Mahal ideal for royal destination weddings and
+                  business events in Jaipur. Complemented by the craft of our master chefs and impeccable service, the
+                  palace hotel in Jaipur near Hawa Mahal offers the perfect package for once-in-a-lifetime celebrations.
+                  Over the years, it has played gracious host to several illustrious guests, such as Lord Louis
+                  Mountbatten, Prince Charles and Jacqueline Kennedy. We invite you to experience, like they have, the
+                  finest traditions of Rajput hospitality. Come, hear the stories of ‘The Jewel of Jaipur’.
+              </p>
+              <span class="read-more-btn" id="btn">Read More...</span>
+            </div>
+
+          </div>
+          <script>function myFunction()
+            document.getElementById("btn").style.cursor = "pointer";</script>
+
+          <button class="primary-btn">ABOUT US</button>
+        </div>
+        <div class="right">
+          <img
+            src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/67917739-H1-TRPJ_RajputRoom1_7790-3x2.jpg/_jcr_content/renditions/cq5dam.web.756.756.jpeg"
+            width="700" alt="">
+        </div>
+      </div>
+  </section>
+
+  <section class="counter top">
+    <div class="container grid">
+      <div class="box">
+        <h1>2500</h1>
+        <hr>
+        <span>Customer</span>
+      </div>
+      <div class="box">
+        <h1>1250</h1>
+        <hr>
+        <span>Happy Customer</span>
+      </div>
+      <div class="box">
+        <h1>150</h1>
+        <hr>
+        <span>Expert Technicians</span>
+      </div>
+      <div class="box">
+        <h1>3550</h1>
+        <hr>
+        <span>Desktop Reaired</span>
+      </div>
+    </div>
+  </section>
+  <section class="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>EXPOLRE</h1>
+        <h2>Our Rooms</h2>
+        <p>Explore your favourite rooms...
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/PalaceRoom1-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Palace Room 1 Bedroom Garden View or Courtyard View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Newly renovated rooms, rich in terms of textures and colors, each Palace room has been redesigned for
+                comfort. A four poster bed or Twin bed, walk in wardrobes and a spacious bathroom which will help you
+                sink into the palatial experience. Size 46-51 Sq Mt.</p>
+              <i class="fa-solid fa-hotel"></i><span>Size 46-51 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹55000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/historical-suite.jpg/jcr:content/renditions/cq5dam.web.323.323.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Historical Suite 1 Bedroom Garden View or Courtyard View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>While maintaining the palace's historic charm, the suites are decorated with Rajasthani artwork and
+                transparent fabrics and have been recently renovated. These are 1-room suites divided into a living room
+                and a bedroom. (65-70 Square meter)
+              </p>
+              <i class="fa-solid fa-hotel"></i><span>Size 60-70 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹90000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/27652575-H1-001RoyalSuite-BadalMahalSuite-3x2.jpg/_jcr_content/renditions/cq5dam.web.756.756.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Royal Suite 1 Bedroom Garden View or Courtyard View
+              </h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Some of the Royal Suites were the personal chambers of the Maharaja of Jaipur. The décor with
+                transports to the bygone era of the royalty. These are 1 room suites divided into a living area and a
+                bedroom. (102-107 Sq Mt).</p>
+              <i class="fa-solid fa-hotel"></i><span>Size 102-107 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹375000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/TRPJ_Rajmata_GayatriDeviSuite_222_0910-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Grand Royal Suite 1 Bedroom Garden View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>These suites were the personal chambers of the Royal family with large French Windows over looking the
+                gardens These suites are equipped with a bedroom, drawing room and living room. (139-144 Sq Mt).</p>
+              <i class="fa-solid fa-hotel"></i><span>Size 139-144 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹550000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/TRPJ_SukhNiwasSuite_31-3x2.jpg/_jcr_content/renditions/cq5dam.web.756.756.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Grand Presidential Suite 1 Bedroom Garden View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>It offers a large lounge overlooking the gardens, extending to the terrace, a royal dining room and a
+                master bedroom with dressing area. Celebrities have had a memorable experience during their stay.(167 Sq
+                Mt)</p>
+              <i class="fa-solid fa-hotel"></i><span>Size 167-169 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹950000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img
+                src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/GrandPresidentialSuite-SuryavanshiSuite-3x2.jpg/_jcr_content/renditions/cq5dam.web.756.756.jpeg"
+                alt="">
+            </div>
+            <div class="text">
+              <h2>Luxury Room Garden View</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>The Luxury Rooms are traditionally decorated with period furniture and provide an array of quality
+                amenities. With garden view from the palace’s top floor, they reflect old world charm. A beautiful view
+                of Garden with affordable price.</p>
+              <i class="fa-solid fa-hotel"></i><span>Size 65-71 sq Mt</span><br>
+              <i class="fa-sharp fa-solid fa-wifi"></i><span>Complimentary wifi</span>
+              <div class="button flex">
+                <button class="primary-btn">BOOK NOW</button>
+                <h3>₹60000* <span> <br> Per Night </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+<section class="gallery">
+  <div class="container top">
+    <div class="heading">
+      <h1>PHOTOS</h1>
+      <h2>Our Gallery</h2>
+      <p>Explore the diffrent landscape of our Hotels</p>
+    </div>
+  </div>
+
+  <div class="content mtop">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/TRPJ_Rajmata_GayatriDeviSuite_222_0910-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="" height="400">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.wildfrontierstravel.com/upload/mirror/dhruv-wildfrontierstravel-com/c8a0ce74_DiningRajputRoomRajputRoom33x2.jpg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/sukhniwasdiningarea2-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/27652583-H1-002RoyalSuite-SittingArea-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/27652591-H1-SukhNiwas-Bathroom-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/67917690-H1-TRPJ_Lawns_Verandah_Cafe_4296-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/67917760-H1-TRPJ_Jiva_Grande_Spa_Couple_Tent_6807-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/PeacockSuite-Bedroom-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/RoyalTajSpa12-3x2.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+      <div class="items">
+        <div class="img">
+          <img src="https://www.tajhotels.com/content/dam/luxury/rambagh-palace/3x2/Gazebo.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+        </div>
+        <div class="overlay">
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services top">
+  <div class="container">
+    <div class="heading">
+      <h1>SERVICES</h1>
+      <h2>Our Services</h2>
+      <p>A culinary experience is unforgettable because it's not the usual serving of food on a table and you on a chair. There's always a story behind it.</p>
+    </div>
+
+
+    <div class="content flex_space">
+      <div class="left grid2">
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <h3>Delious Food</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-person-biking"></i>
+            <h3>Fintness</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Inhouse Restaurant</h3>
+          </div>
+        </div>
+        <div class="box">
+          <div class="text">
+            <i class="fa-solid fa-spa"></i>
+            <h3>Beauty Spa</h3>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/service.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  $('.owl-carousel1').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 4,
+      },
+      1000: {
+        items: 6
+      }
+    }
+  })
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+<footer id="23">
+  <div class="container grid">
+    <div class="box">
+      <h3>
+        <ul type="none">
+          <li class="classoficon"> ! </li>
+          <li class="HOME">HOME</li>
+        </ul>
+      </h3>
+      <p>!Home is a hotel booking website that offers a user-friendly and comprehensive platform for booking
+        accommodations around the world. The website's homepage features a search bar where users can input their
+        desired travel dates, the number of guests, and the preferred location.</p>
+
+      <div class="icon">
+        <a href="https://m.facebook.com"> <i class="fa fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Links</h2>
+      <ul>
+        <li>Company History</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Contact Us</h2>
+      <p>For any query contact us using following details:
+      </p>
+      <i class="fa fa-location-dot"></i>
+      <label>New Town , Banglore , India</label> <br>
+      <i class="fa fa-phone"></i>
+      <label>7004571251/8210030064</label> <br>
+      <i class="fa fa-envelope"></i>
+      <label>!homepvtltd@gmail.com</label> <br>
+    </div>
+  </div>
+
+  
+</footer>
+<script>
+  $('.owl-carousel1').owlCarousel({
+    loop: true,
+    margin: 40,
+    nav: true,
+    dots: false,
+    navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 2,
+        margin: 10,
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+<script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
